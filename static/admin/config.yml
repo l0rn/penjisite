@@ -30,11 +30,9 @@ collections:
     extension: 'html'
     editor:
       preview: false
-    identifier_field: name
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
       - { label: 'Layout', name: 'layout', widget: 'string' }
   - name: 'posts'
     label: 'Posts'
@@ -45,8 +43,8 @@ collections:
     extension: 'md'
     editor:
       preview: false
-    identifier_field: name
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
