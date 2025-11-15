@@ -12,9 +12,8 @@ type: # This is here for future possible development, you can leave it blank
 layout: 'single'
 # Refer to [Front matter | Hugo](https://gohugo.io/content-management/front-matter/)
 Params:
-  imageAttribution: 'Foto by <a href="https://unsplash.com/it/@julie_soul?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Julia Solonina</a> on <a href="https://unsplash.com/it/foto/fiore-dai-petali-rosa-sbocciare-durante-il-giorno-iHcxG7QPmXk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  
-  ' # Set an attribution to the author of the picture you're using for the post
+  imageAttribution: 'Foto by <a href="https://unsplash.com/it/@julie_soul?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Julia Solonina</a> on <a href="https://unsplash.com/it/foto/fiore-dai-petali-rosa-sbocciare-durante-il-giorno-iHcxG7QPmXk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+ # Set an attribution to the author of the picture you're using for the post
 ---
 
 The summary on this page was left empty, so it was grabbed from the first content the theme can find on the page, which is what you are reading right now!
