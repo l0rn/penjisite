@@ -1,43 +1,31 @@
 disabled = false
-languageCode = 'it-IT'
-languageName = 'Italiano'
+languageCode = 'de-DE'
+languageName = 'Deutsch'
 title = 'Magnolia'
 copyright = """Designed with [Hugo](https://gohugo.io/) by [Ludovico Caluori](https://github.com/ololiuhqui) 🎨 \n
  Licensed under [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md) 📄"""
-contentDir="content/it"
+contentDir="content/de"
 
 [params]
-  subtitle = "Free Hugo theme"
+  subtitle = "Kostenloses Hugo-Theme"
 
 # PAGES
 
   [params.homepage]
-    preTitle = 'Free Hugo theme'
+    preTitle = 'Kostenloses Hugo-Theme'
     title = "Magnolia"
-    intro= """
-### "La libertà ci rende esseri umani migliori e ci fa migliorare più velocemente il nostro status di razza collettiva ".
-___
+    mainButton = "Eigenschaften"
+    mainButtonRef = "/eigenschaften"
+    secondButton = "Kontakte"
+    secondButtonRef = "/kontakte"
 
-**Un tema Hugo semplice, completamente personalizzabile e multilingue pensato per i professionisti e le piccole imprese**.
-
-Ho costruito questo tema pensando alla semplicità, è piccolo e facilmente **personalizzabile, reattivo, modulare e multilingua**. Ma lascia anche spazio a una personalizzazione più approfondita, poiché utilizza **Bootstrap** e **SCSS**.
-
-Qui c'è la [pagina github del tema](https://github.com/ololiuhqui/magnolia-free-hugo-theme), a cui si dovrebbe fare riferimento se si cercano ulteriori dettagli, ricordati di lasciare una stellina al repo!
-
-Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche e vedete un bellissimo esempio di pagina dei contatti qui sotto.
-        """
-    mainButton = "Caratteristiche"
-    mainButtonRef = "/caratteristiche"
-    secondButton = "Contatti"
-    secondButtonRef = "/contatti"
-
-    blogTitle = "Storie interessanti"
-    blogButton= "More Stories"
+    blogTitle = "Interessante Geschichten"
+    blogButton= "Mehr Geschichten"
 
 [params.office]
-  title = "Uffici"
- description = "Questa pagina può essere facilmente personalizzata con l'aggiunta di un link a Google Maps per ottenere indicazioni stradali verso il luogo dell'attività."
- buttonText = "Indicazioni"
+  title = "Büros"
+ description = "Diese Seite kann einfach angepasst werden, indem ein Link zu Google Maps hinzugefügt wird, um Wegbeschreibungen zum Standort des Unternehmens zu erhalten."
+ buttonText = "Wegbeschreibung"
  buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8"
  mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382266.44569392945!2d-76.55832397784323!3d41.53770983690751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77484bbb%3A0xfff27920ab9bfae8!2sScranton%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1716459350324!5m2!1sit!2sit" # google maps "embed" link here
 
@@ -97,13 +85,13 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
 [params.schedules]
   enabledFooter = false
   enabledContacts = true
-  title = "Office hours"
+  title = "Öffnungszeiten"
   [params.schedules.days]
-    day1 = "Lunedì: 9:00 – 19:00"
-    day2 = "Martedì: 9:00 – 19:00"
-    day3 = "Mercoledì: 9:00 – 19:00"
-    day4 = "Giovedì: 9:00 – 19:00"
-    day5 = "Venerdì: 9:00 – 19:00"
+    day1 = "Montag: 9:00 – 19:00"
+    day2 = "Dienstag: 9:00 – 19:00"
+    day3 = "Mittwoch: 9:00 – 19:00"
+    day4 = "Donnerstag: 9:00 – 19:00"
+    day5 = "Freitag: 9:00 – 19:00"
     day6 = ""
     day7 = ""
 
@@ -121,11 +109,11 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
   phone = "+00 0000000"
 
 [params.notfound]
-  title = "404, page not found"
+  title = "404, Seite nicht gefunden"
 
 [params.single] # for posts pages (visible only if posts are rendered)
-  similarContent= "Contenuti Simili"
-  toc= "Indice"
+  similarContent= "Ähnliche Inhalte"
+  toc= "Inhaltsverzeichnis"
 
 [menus]
   [[menus.main]]
@@ -133,14 +121,14 @@ Guardate cosa è in grado di fare questo tema nella pagina delle caratteristiche
   pageRef = "/"
   weight = 1
   [[menus.main]]
-  name = "caratteristiche"
-  pageRef = "pages/services"
+  name = "Eigenschaften"
+  pageRef = "pages/eigenschaften"
   weight = 2
   [[menus.main]]
-  name = "Uffici"
-  pageRef = "pages/office"
+  name = "Büros"
+  pageRef = "pages/büros"
   weight = 3
   [[menus.main]]
-  name = "Contatti"
-  pageRef = "pages/contacts"
+  name = "Kontakte"
+  pageRef = "pages/kontakte"
   weight = 4

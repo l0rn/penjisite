@@ -1,7 +1,7 @@
 baseURL = 'https://example.com'
 languageCode = ''
 title = 'Magnolia Default' # This can get overwritten by the single language files
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'de'
 # defaultContentLanguageInSubDir = true
 enableRobotsTXT = true
 theme = "Magnolia"
@@ -12,7 +12,7 @@ googleAnalytics = ""
   # Note that enabling this might impact SEO performance, since many search engines now
   # use LLMs that gather data with these crawlers from across the web
 [params.robots]
-  blockAIcrawlers = false
+blockAIcrawlers = false
 
 # BLOG
 # Uncomment if you want to disable all posts and tags rendering and indexing
@@ -25,12 +25,20 @@ googleAnalytics = ""
 tag = "tags"
 
 [module]
-    [[module.mounts]]
-      source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-      target = "assets/js/bootstrap.bundle.min.js"
-      [[module.mounts]]
-      source = 'assets'
-      target = 'assets'
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "node_modules/decap-cms-app/dist/decap-cms-app.js"
+    target = "static/js/decap.js"
+
   # Prints warning if hugo version is too old
   [module.hugoVersion]
     extended = false
