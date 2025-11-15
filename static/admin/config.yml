@@ -11,7 +11,7 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
+  structure: multiple_files
 
   # Required - a list of locales to show in the editor UI
   locales: [en, de]
@@ -24,9 +24,9 @@ collections:
   - name: 'pages'
     label: 'Pages'
     i18n: true
-    folder: 'content'
+    folder: 'content/pages'
     create: true
-    path: 'pages/{{slug}}/index'
+    path: '{{slug}}/index'
     extension: 'html'
     editor:
       preview: false
@@ -37,9 +37,9 @@ collections:
   - name: 'posts'
     label: 'Posts'
     i18n: true
-    folder: 'content'
+    folder: 'content/posts'
     create: true
-    path: 'posts/{{slug}}/index'
+    path: '{{slug}}/index'
     extension: 'md'
     editor:
       preview: false
