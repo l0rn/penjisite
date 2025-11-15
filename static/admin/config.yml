@@ -6,19 +6,6 @@ backend:
 media_folder: "static/media/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/media/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
-collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/posts'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
 i18n:
   # Required and can be one of multiple_folders, multiple_files or single_file
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
@@ -32,3 +19,34 @@ i18n:
   # Optional, defaults to the first item in locales.
   # The locale to be used for fields validation and as a baseline for the entry.
   default_locale: de
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    i18n: true
+    folder: 'content'
+    create: true
+    path: 'pages/{{slug}}/index'
+    extension: 'html'
+    editor:
+      preview: false
+    identifier_field: name
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Layout', name: 'layout', widget: 'string' }
+  - name: 'posts'
+    label: 'Posts'
+    i18n: true
+    folder: 'content'
+    create: true
+    path: 'posts/{{slug}}/index'
+    extension: 'md'
+    editor:
+      preview: false
+    identifier_field: name
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
